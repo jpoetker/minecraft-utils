@@ -1,3 +1,4 @@
+![Java CI with Gradle](https://github.com/jpoetker/minecraft-utils/workflows/Java%20CI%20with%20Gradle/badge.svg)
 # minecraft-utils
 Helpers for creating forge minecraft mods.
 
