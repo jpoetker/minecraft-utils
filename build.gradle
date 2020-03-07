@@ -83,6 +83,10 @@ publishing {
     repositories {
         maven {
             url "https://maven.pkg.github.com/jpoetker"
+            credentials {
+                username = System.env.USERNAME
+                password = System.env.PASSWORD
+            }
         }
     }
 }
