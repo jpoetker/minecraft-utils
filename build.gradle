@@ -74,10 +74,21 @@ def reobfArtifact = artifacts.add('default', reobfFile) {
     type 'jar'
     builtBy 'reobfJar'
 }
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allJava
+}
+
+task packageJavadoc(type: Jar) {
+    from javadoc
+    classifier = 'javadoc'
+}
 publishing {
     publications {
         mavenJava(MavenPublication) {
             artifact reobfArtifact
+            artifact sourceJar
+            artifact packageJavadoc
         }
     }
     repositories {

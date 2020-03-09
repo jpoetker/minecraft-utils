@@ -1,2 +1,2 @@
-[06Mar2020 20:28:26.542] [Test worker/ERROR] [net.minecraft.util.registry.Registry/]: Unable to bootstrap registry 'minecraft:sound_event'
-[06Mar2020 20:28:30.277] [Test worker/ERROR] [net.minecraft.util.registry.Registry/]: Registry 'minecraft:sound_event' was empty after loading
+[09Mar2020 09:08:23.768] [Test worker/ERROR] [net.minecraft.util.registry.Registry/]: Unable to bootstrap registry 'minecraft:sound_event'
+[09Mar2020 09:08:26.446] [Test worker/ERROR] [net.minecraft.util.registry.Registry/]: Registry 'minecraft:sound_event' was empty after loading
