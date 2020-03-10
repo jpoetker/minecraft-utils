@@ -24,6 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+      env:
+        BUILD_NUMBER: ${{ github.run_number }}
 
     # The USERNAME and PASSWORD need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
@@ -32,3 +34,4 @@ jobs:
       env:
         USERNAME: ${{ github.actor }}
         PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        BUILD_NUMBER: ${{ github.run_number }}
